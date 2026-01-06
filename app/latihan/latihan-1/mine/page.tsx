@@ -16,7 +16,7 @@ export default async function mine(){
                 {button.map(b =>(
                     <button 
                     key={b.id} 
-                    className=" m-5 rounded 10 bg-purple-400 
+                    className=" m-5 rounded-10 bg-purple-400 
                                     hover:bg-purple-600 hover:mx-0 hover:px-10 
                                     py-3 px-5 transtition duration-300">
                     {b.name}
