@@ -1,12 +1,12 @@
-import LikeButton from "LikeButton";
+import LikeButton from "./likeButton";
 
 export default function PostItem({ post }) {
   return (
     <div className="p-4 rounded-lg border shadow-sm bg-white
                     transition duration-300 hover:scale-[1.01]">
-      <h2 className="font-semibold text-lg">{post.title}</h2>
+      <h2 className="font-semibold text-gray-800 text-lg">{post.username}</h2>
 
-      <p className="text-gray-600 mt-1">{post.body}</p>
+      <p className="text-gray-600 mt-1">{post.caption}</p>
 
       <div className="mt-3">
         <LikeButton id={post.id} />

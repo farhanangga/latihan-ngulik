@@ -1,4 +1,4 @@
-import PostItem from "PostItem";
+import PostItem from "./postItem";
 
 export default async function PostList() {
 

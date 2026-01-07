@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import PostList from "components/PostList";
+import PostList from "../../components/latihan-2/postList";
 
 export default function Page() {
   return (
