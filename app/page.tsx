@@ -5,7 +5,7 @@ export default async function beranda(){
   const cardLatihan = [
     {id : 1 , name : "Latihan 1" , linkgpt : "/latihan/latihan-1", mylink : "/latihan/latihan-1/mine", mylink2 : "/latihan/latihan-1/mine-2"},
     {id : 2 , name : "Latihan 2" , linkgpt : "/latihan/latihan-2", mylink : "/latihan/latihan-2/mine", mylink2 : "/latihan/latihan-2/mine-2"},
-    {id : 3 , name : "Latihan 3" , linkgpt : "/latihan/latihan-3", mylink : "/latihan/latihan-3/mine", mylink2 : "/latihan/latihan-3/mine-3"},
+    {id : 3 , name : "Latihan 3" , linkgpt : "/latihan/latihan-3", mylink : "/latihan/latihan-3/mine", mylink2 : "/latihan/latihan-3/mine-2"},
   ]
   
   return (

@@ -13,10 +13,9 @@ export default function LikeButton() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        className={`w-7 h-7 transition-colors duration-300
+        className={`size-8 transition-colors duration-300
           ${liked ? "fill-red-500" : "fill-none stroke-gray-400"}
         `}
-        strokeWidth="2"
       >
         <path
           strokeLinecap="round"
