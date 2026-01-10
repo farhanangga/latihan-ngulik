@@ -48,7 +48,7 @@ export default  function Home (){
             </div>
 
             {/* CHATBAR */}
-            <div className="hidden sm:block fixed right-0 top-0 lg:w-100 xl:w-120 bg-white border-l-2 border-gray-200 gap-5 ">
+            <div className="hidden sm:block fixed right-0 top-0  lg:w-100 xl:w-120 bg-white border-l-2 border-gray-200 gap-5 ">
                 
                 {/* SEARCHING */}
                 <div className="flex justify-between gap-2 border-b-2 border-gray-200 p-2 lg:p-5">
@@ -59,7 +59,7 @@ export default  function Home (){
                 {/* LIST CHAT */}
                 <div className="flex flex-col gap-3 w-full min-h-150 max-h-188 overflow-y-auto p-2 lg:p-5 ">
                     {chat.map( c =>(
-                        <div key={c.id} className="p-1 lg:p-3 w-full flex gap-5 border-2 border-gray-200 hover:border-gray-800 duration-400 rounded-lg">
+                        <div key={c.id} className="p-1 lg:p-3 w-full flex gap-3 border-2 border-gray-200 hover:border-gray-800 duration-400 rounded-lg">
                             <div className="rounded-full w-12 h-12 bg-gray-200">
                             </div>
                             <div className="hidden lg:flex flex-col">
@@ -76,15 +76,31 @@ export default  function Home (){
                     ))}
                 </div>
             </div>
+            
+            <div className="min-h-screen min-w-screen">
+                {/* STORY */}
+                <div className="p-3 sm:hidden flex gap-2 overflow-x-auto scrollbar-hide">
+                <div className="h-20 w-20 min-w-[5rem] bg-gray-400 rounded-full flex-shrink-0"></div>
+                <div className="h-20 w-20 min-w-[5rem] bg-gray-400 rounded-full flex-shrink-0"></div>
+                <div className="h-20 w-20 min-w-[5rem] bg-gray-400 rounded-full flex-shrink-0"></div>
+                <div className="h-20 w-20 min-w-[5rem] bg-gray-400 rounded-full flex-shrink-0"></div>
+                <div className="h-20 w-20 min-w-[5rem] bg-gray-400 rounded-full flex-shrink-0"></div>
+                <div className="h-20 w-20 min-w-[5rem] bg-gray-400 rounded-full flex-shrink-0"></div>
+                <div className="h-20 w-20 min-w-[5rem] bg-gray-400 rounded-full flex-shrink-0"></div>
+                </div>
 
-            {/* POSTINGAN */}
-            <div className="pl-0 sm:pl-30 md:pl-[27vw] lg:pl-[23vw] py-0 sm:py-10">
-                <Suspense fallback={
-                    <p>Loading</p>
-                }>
-                    <PostList />
-                </Suspense>
+                {/* POSTINGAN */}
+                <div className="pl-0 sm:pl-[20vw] md:pl-[27vw] lg:pl-[20vw] xl:pl-[25vw] py-0 sm:py-10">
+                    <Suspense fallback={
+                        <p>Loading</p>
+                    }>
+                        <PostList />
+                    </Suspense>
+                </div>
             </div>
+            
+
+            
         </div>
     );
 }
